@@ -1,16 +1,16 @@
-# sms_to_sheet
+## Sms To Sheet | Flutter
 
-A new Flutter project.
 
-## Getting Started
+App for receiving messages from a specified bank (receiving in the background - in case the user's phone is not connected to the Internet, the messages are stored in the database to start sending when the user connect to the Internet) and send to google sheet for save.
+Receive messages in app that are Undescription
+and add  description for them and the values in the Google Sheet are updated.
 
-This project is a starting point for a Flutter application.
+Technologies
 
-A few resources to get you started if this is your first Flutter project:
+Technologies and Tools that are used in this projects are:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    Flutter
+    Flutter Bloc
+    Dependency Injection
+    Foreground Service
+    WorkManager
