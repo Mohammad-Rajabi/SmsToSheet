@@ -1,0 +1,16 @@
+{
+  "retry": "تلاش دوباره",
+  "noInternet": "اتصال به اینترنت وجود ندارد.",
+  "failure": "مشکلی پیش آمده!",
+  "smsListWithoutDescription": "لیست پیامک های بدون شرح",
+  "add": "افزودن شرح",
+  "descriptions": "توضیحات",
+  "save": "ثبت",
+  "empty": "پیامکی وجود ندارد",
+  "hint": "یه چیزی بنویس ...",
+  "config": "تنظیمات",
+  "googleSheetUrl": "google sheet url",
+  "googleScriptUrl": "google script url",
+  "save": "ذخیره",
+  "successful": "با موفقیت ذخیره شد."
+}

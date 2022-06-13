@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sending_sms">در حال ارسال پیامک به …google sheet</string>
+    <string name="sent_sms_successful">پیامک با موفقیت ارسال شد.</string>
+    <string name="sent_smses_successful">پیامک ها با موفقیت ارسال شد.</string>
+    <string name="no_internet">اتصال به اینترنت برای ارسال پیامک وجود ندارد!</string>
+    <string name="error_in_send">خطا در ارسال تعدادی از پیامک ها</string>
+
+</resources>
