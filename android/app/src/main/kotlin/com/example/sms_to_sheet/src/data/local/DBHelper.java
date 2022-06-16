@@ -11,7 +11,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 import com.example.sms_to_sheet.src.data.model.SmsModel;
-import com.example.sms_to_sheet.src.data.model.UserGoogleSheetInfoModel;
 
 import java.util.ArrayList;
 import java.util.List;

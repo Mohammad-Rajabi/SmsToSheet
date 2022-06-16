@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:sms_to_sheet/src/core/constants/general_constants.dart';
 import 'package:sms_to_sheet/src/data/repositories/sms_list_update_repo.dart';
 
 import 'src/bloc/main_bloc/main_bloc.dart';
@@ -41,14 +42,15 @@ class App extends StatelessWidget {
           ),
           RepositoryProvider(
             create: (context) => MainBloc(
-              smsRepo: RepositoryProvider.of<SmsRepo>(context),
-              smsListUpdateRepo:
-                  RepositoryProvider.of<SmsListUpdateRepo>(context)),
+                smsRepo: RepositoryProvider.of<SmsRepo>(context),
+                smsListUpdateRepo:
+                    RepositoryProvider.of<SmsListUpdateRepo>(context)),
             lazy: true,
           ),
         ],
         child: MaterialApp(
             debugShowCheckedModeBanner: false,
+            navigatorKey: kNavigatorKey,
             theme: ThemeData(
               primarySwatch: Colors.blue,
             ),

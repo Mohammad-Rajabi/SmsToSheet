@@ -7,8 +7,9 @@ import android.os.Build;
 import com.example.sms_to_sheet.src.Constants;
 
 import io.flutter.app.FlutterApplication;
+import io.flutter.plugin.common.PluginRegistry;
 
-public class Application extends FlutterApplication {
+public class Application extends FlutterApplication  {
 
 
     @Override
@@ -20,6 +21,8 @@ public class Application extends FlutterApplication {
             NotificationManager manager  = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel);
         }
+
+
 
     }
 }

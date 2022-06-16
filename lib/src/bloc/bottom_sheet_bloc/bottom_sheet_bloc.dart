@@ -42,12 +42,12 @@ class BottomSheetBloc extends Bloc<BottomSheetEvent, BottomSheetState> {
           emit(BottomSheetState(
               status: BottomSheetStateStatus.success, sms: event.sms));
           controller.clear();
-          Navigator.pop(event.context);
           _smsListUpdateRepo.updateSink.add(event.sms);
+          Navigator.pop(event.context);
         } else if (dioError.type == DioErrorType.other &&
             dioError.error is NoInternetException) {
           emit(BottomSheetState(
-              status: BottomSheetStateStatus.noInternet, sms: null));
+              status: BottomSheetStateStatus.noInternet));
         } else {
           emit(BottomSheetState(
             status: BottomSheetStateStatus.failure,

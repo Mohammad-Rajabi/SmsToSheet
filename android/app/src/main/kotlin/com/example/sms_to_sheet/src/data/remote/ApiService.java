@@ -5,6 +5,8 @@ import static com.example.sms_to_sheet.src.Constants.BASE_URL;
 import static com.example.sms_to_sheet.src.Constants.GOOGLE_SHEET_ID;
 import static com.example.sms_to_sheet.src.Constants.POST_ENDPOINT;
 
+import android.util.Log;
+
 import com.example.sms_to_sheet.src.data.model.SentSmsResponse;
 import com.example.sms_to_sheet.src.data.model.SmsModel;
 import com.example.sms_to_sheet.src.util.ResponseCallback;
@@ -44,7 +46,7 @@ public class ApiService {
             @Override
             public void onResponse(Call<SentSmsResponse> call, Response<SentSmsResponse> response) {
                 if (response.body() != null && response.body().status.equals("SUCCESS")) {
-                    callback.successful();
+                    callback.success();
 
                 } else {
                     callback.failure();
@@ -69,7 +71,7 @@ public class ApiService {
         try {
             Response<SentSmsResponse> response = call.execute();
             if (response.body() != null && response.body().status.equals("SUCCESS")) {
-                callback.successful();
+                callback.success();
             } else {
                 callback.failure();
             }
